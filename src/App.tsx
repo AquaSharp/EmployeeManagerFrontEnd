@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { EmployeeIndex } from "./components/employee/EmployeeIndex";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// Define your Chakra UI theme
+const theme = extendTheme({
+  // Your theme configuration here
+});
+
+// App component
+const App = () => (
+  <ChakraProvider theme={theme}>
+    <EmployeeIndex />
+  </ChakraProvider>
+);
 
 export default App;

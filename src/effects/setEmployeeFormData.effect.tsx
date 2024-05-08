@@ -11,7 +11,7 @@ export const SetEmployeeFormDataEffect = (
 ) => {
   useEffect(() => {
     if (selectedEmployee) {
-      setValue("departmentId", selectedEmployee.department.id);
+      setValue("departmentId", selectedEmployee.departmentId);
       setIsDepartmentSelected(true);
       setValue("firstName", selectedEmployee.firstName);
       setValue("lastName", selectedEmployee.lastName);

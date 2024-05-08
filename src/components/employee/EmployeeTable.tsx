@@ -47,7 +47,8 @@ export const EmployeeTable = () => {
       },
       {
         Header: "Department",
-        accessor: (row) => row.department.name,
+        // since department is nullable
+        accessor: (row) => row.department?.name,
       },
       {
         Header: "Email",

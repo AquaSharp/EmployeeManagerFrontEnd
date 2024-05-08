@@ -73,7 +73,7 @@ export const EmployeeForm = ({
       dateOfBirth: formData.dateOfBirth,
       age: formData.age,
       salary: formData.salary,
-      department: formData.department,
+      departmentId: formData.departmentId,
       createdAt: formData.createdAt,
       updatedAt: formData.updatedAt,
     };
